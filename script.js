@@ -395,7 +395,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const loginForm = document.querySelector('.login-form');
     loginForm.addEventListener('submit', function(e) {
         e.preventDefault();
-        // Add your login logic here
         console.log('Login submitted');
     });
 });
