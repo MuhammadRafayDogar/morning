@@ -378,25 +378,20 @@ document.addEventListener('DOMContentLoaded', function() {
     const accountLink = document.querySelector('.account');
     const closeModal = document.querySelector('.close-modal');
 
-    // Open modal when clicking account icon
     accountLink.addEventListener('click', function(e) {
         e.preventDefault();
         loginModal.style.display = 'flex';
     });
-
-    // Close modal when clicking X
     closeModal.addEventListener('click', function() {
         loginModal.style.display = 'none';
     });
 
-    // Close modal when clicking outside
     window.addEventListener('click', function(e) {
         if (e.target === loginModal) {
             loginModal.style.display = 'none';
         }
     });
 
-    // Handle login form submission
     const loginForm = document.querySelector('.login-form');
     loginForm.addEventListener('submit', function(e) {
         e.preventDefault();
@@ -416,8 +411,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const currency = this.querySelector('.currency').textContent;
             currencyToggle.textContent = `${country} ${currency}`;
             
-            // Here you can add logic to actually change the currency
-            // For example, sending an API request or updating local storage
             console.log(`Currency changed to: ${country} ${currency}`);
         });
     });
