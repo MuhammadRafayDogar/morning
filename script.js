@@ -416,8 +416,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const currency = this.querySelector('.currency').textContent;
             currencyToggle.textContent = `${country} ${currency}`;
             
-            // Here you can add logic to actually change the currency
-            // For example, sending an API request or updating local storage
             console.log(`Currency changed to: ${country} ${currency}`);
         });
     });
